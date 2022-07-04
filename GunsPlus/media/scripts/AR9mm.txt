@@ -1,0 +1,157 @@
+module Base {
+    imports {
+        Base
+    }
+
+    item AR9Clip
+    {
+        DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	9mm AR-15 Magazine,
+        Icon	=	BerettaClip,
+        MaxAmmo = 30,
+        AmmoType = Base.Bullets9mm,
+        StaticModel = GunMagazine,
+        GunType = gunp.AR9mm,
+        WorldStaticModel = Gun_Magazine_Ground,
+    }
+
+    item AR9mm
+    {
+        DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	14,
+        WeaponSprite	=	AR9mm,
+        SoundVolume	=	25,
+        MinAngle	=	0.965,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	1.5,
+        SplatNumber	=	3,
+        PushBackMod	=	0.3,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	1,
+        PiercingBullets = FALSE,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	15,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Rifle,
+        DisplayName	=	9mm AR-15,
+        MinRange	=	0.2,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M16BringToBear,
+        SwingSound	=	M16Shoot,
+        HitSound = BulletHitBody,
+		ClickSound = M16Jam,
+        SoundRadius	=	30,
+        MinDamage	=	0.8,
+        MaxDamage	=	1.4,
+        SplatSize	=	3,
+        KnockdownMod	=	4,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	AssaultRifle,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        CriticalChance = 40,
+        AimingPerkCritModifier = 0,
+        HitChance = 75,
+        AimingPerkHitChanceModifier = 2,
+        AimingPerkMinAngleModifier = 0.01,
+        AimingPerkRangeModifier = 3,
+        RecoilDelay = 0,
+        SoundGain = 1.5,
+        ReloadTime = 25,
+        AimingTime = 25,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound = M16Break,
+        TwoHandWeapon = TRUE,
+        MetalValue = 45,
+        AmmoBox = Bullets9mmBox,
+        MaxAmmo = 30,
+		EquipSound = M16Equip,
+		UnequipSound = M16UnEquip,
+        InsertAmmoSound = M16InsertAmmo,
+        EjectAmmoSound = M16EjectAmmo,
+		InsertAmmoStartSound = M16InsertAmmoStart,
+		InsertAmmoStopSound = M16InsertAmmoStop,
+		EjectAmmoStartSound = M16EjectAmmoStart,
+		EjectAmmoStopSound = M16EjectAmmoStop,
+        ShellFallSound = M16CartridgeFall,
+        RackSound = M16Rack,
+        MagazineType = Base.AR9Clip,
+        AmmoType = Base.9mmBullets,
+        WeaponReloadType = boltaction,
+        JamGunChance = 2,
+        AttachmentType = Rifle,
+        FireMode = Single,
+        FireModePossibilities = Single,
+        ModelWeaponPart = x2Scope x2Scope scope scope,
+        ModelWeaponPart = x4Scope x4Scope scope scope,
+        ModelWeaponPart = x8Scope x8Scope scope scope,
+        ModelWeaponPart = IronSight IronSight scope2 scope2,
+        ModelWeaponPart = RedDot RedDot reddot reddot,
+        ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
+        ModelWeaponPart = Laser Laser laser laser,
+        StopPower = 1.5,
+    }
+
+    model AR9mm
+	{
+		mesh = weapons/firearm/ar9mm,
+		texture = weapons/firearm/ar9mm,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

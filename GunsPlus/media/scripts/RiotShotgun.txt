@@ -1,0 +1,128 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item RiotShotgun
+	{
+	    DisplayCategory = Weapon,
+		ImpactSound	=	null,
+		MaxRange	=	12,
+		RangeFalloff	=	TRUE,
+		WeaponSprite	=	RiotShotgun,
+		SoundVolume	=	200,
+		MinAngle	=	0.9,
+		Type	=	Weapon,
+		KnockBackOnNoDeath	=	TRUE,
+		Ranged	=	TRUE,
+        FireMode = Single,
+		ProjectileCount	=	6,
+		ConditionLowerChanceOneIn	=	60,
+		Weight	=	5,
+		SplatNumber	=	5,
+		PushBackMod	=	0.8,
+		MaxDamage	=	2.2,
+		SubCategory	=	Firearm,
+		AimingMod	=	2,
+		ConditionMax	=	10,
+		ShareDamage	=	FALSE,
+		MaxHitCount	=	4,
+		IsAimedHandWeapon	=	TRUE,
+		IsAimedFirearm	=	TRUE,
+		DoorDamage	=	25,
+		UseEndurance	=	FALSE,
+		DisplayName	=	11-87 Riot Shotgun,
+		MinRange	=	0.61,
+		SwingTime	=	2,
+		AngleFalloff	=	TRUE,
+		MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = JS2000ShotgunBringToBear,
+		SwingSound	=	JS2000ShotgunShoot,
+        HitSound = BulletHitBody,
+		ClickSound = JS2000ShotgunJam,
+		SoundRadius	=	100,
+		MinDamage	=	1.5,
+		KnockdownMod	=	8,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	Shotgun2,
+		RunAnim	=	Run_Weapon2,
+		CriticalChance = 60,
+        CritDmgMultiplier = 2,
+		AimingPerkCritModifier = 3,
+		HitChance = 65,
+		AimingPerkHitChanceModifier = 3,
+		RecoilDelay = 10,
+		SoundGain = 2,
+        ReloadTime = 25,
+        AimingTime = 20,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound  =   JS2000ShotgunBreak,
+        ShellFallSound = JS2000ShotgunCartridgeFall,
+        MetalValue = 45,
+        TwoHandWeapon = TRUE,
+        AmmoBox = ShotgunShellsBox,
+        MaxAmmo = 8,
+		EquipSound = JS2000ShotgunEquip,
+		UnequipSound = JS2000ShotgunUnEquip,
+		InsertAmmoStartSound = JS2000ShotgunInsertAmmoStart,
+        InsertAmmoSound = JS2000ShotgunInsertAmmo,
+		InsertAmmoStopSound = JS2000ShotgunInsertAmmoStop,
+		EjectAmmoStartSound = M14EjectAmmoStart,
+        EjectAmmoSound = M14EjectAmmo,
+		EjectAmmoStopSound = M14EjectAmmoStop,
+        RackSound = M14Rack,
+        AmmoType = Base.ShotgunShells,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = FALSE,
+        JamGunChance = 4,
+        AttachmentType = Rifle,
+        StopPower = 22,
+	}
+	model RiotShotgun
+	{
+		mesh = weapons/firearm/riotshotgun,
+		texture = weapons/firearm/riotshotgun,
+
+		attachment muzzle
+		{
+			offset = 0.4330 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

@@ -1,0 +1,130 @@
+module Base {
+    imports {
+        Base
+    }
+
+    item Ruger44
+	{
+	    DisplayCategory = Weapon,
+		ImpactSound	=	null,
+		MaxRange	=	12,
+		RangeFalloff	=	TRUE,
+		WeaponSprite	=	Ruger44,
+		SoundVolume	=	50,
+		MinAngle	=	0.96,
+		Type	=	Weapon,
+		KnockBackOnNoDeath	=	TRUE,
+		Ranged	=	TRUE,
+        FireMode = Single,
+		ProjectileCount	=	1,
+		ConditionLowerChanceOneIn	=	60,
+		Weight	=	2.5,
+		SplatNumber	=	5,
+		PushBackMod	=	0.3,
+		MaxDamage	=	1.3,
+		SubCategory	=	Firearm,
+		AimingMod	=	2,
+		ConditionMax	=	10,
+		ShareDamage	=	FALSE,
+		MaxHitCount	=	2,
+		IsAimedHandWeapon	=	TRUE,
+		IsAimedFirearm	=	TRUE,
+		DoorDamage	=	15,
+		UseEndurance	=	FALSE,
+		DisplayName	=	Ruger 44,
+		MinRange	=	0.3,
+		SwingTime	=	2,
+		AngleFalloff	=	TRUE,
+		MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M14BringToBear,
+		SwingSound = M14Shoot,
+        HitSound = BulletHitBody,
+		ClickSound = M14Jam,
+		SoundRadius	=	35,
+		MinDamage	=	0.7,
+		KnockdownMod	=	3,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	AssaultRifle2,
+		RunAnim	=	Run_Weapon2,
+		CriticalChance = 30,
+        CritDmgMultiplier = 1,
+		AimingPerkCritModifier = 3,
+		HitChance = 45,
+		AimingPerkHitChanceModifier = 5,
+		RecoilDelay = 5,
+		SoundGain = 2,
+        ReloadTime = 25,
+        AimingTime = 14,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound  =   JS2000ShotgunBreak,
+        ShellFallSound = JS2000ShotgunCartridgeFall,
+        MetalValue = 45,
+        TwoHandWeapon = TRUE,
+        AmmoBox = Bullets44Box,
+        MaxAmmo = 4,
+		EquipSound = M14Equip,
+		UnequipSound = M14UnEquip,
+		InsertAmmoStartSound = JS2000ShotgunInsertAmmoStart,
+        InsertAmmoSound = JS2000ShotgunInsertAmmo,
+		InsertAmmoStopSound = JS2000ShotgunInsertAmmoStop,
+		EjectAmmoStartSound = M14EjectAmmoStart,
+        EjectAmmoSound = M14EjectAmmo,
+		EjectAmmoStopSound = M14EjectAmmoStop,
+        RackSound = M14Rack,
+        AmmoType = Base.Bullets44,
+        WeaponReloadType = boltactionnomag,
+        RackAfterShoot = FALSE,
+        JamGunChance = 7,
+        AttachmentType = Rifle,
+        StopPower = 6,
+	}
+
+
+    model Ruger44
+	{
+		mesh = weapons/firearm/ruger44,
+		texture = weapons/firearm/ruger44,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}
