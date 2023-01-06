@@ -1,0 +1,133 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item Win70FW 
+    {
+        DisplayCategory = Weapon,
+       ImpactSound	=	null,
+       MaxRange	=	100,
+       WeaponSprite	=	Win70FW,
+       SoundVolume	=	200,
+       MinAngle	=	0.97,
+       Type	=	Weapon,
+       MinimumSwingTime	=	0.5,
+       ToHitModifier	=	1.5,
+       NPCSoundBoost	=	1.5,
+       KnockBackOnNoDeath	=	TRUE,
+       Ranged	=	TRUE,
+       SwingAmountBeforeImpact	=	0,
+       ProjectileCount	=	1,
+       ConditionLowerChanceOneIn	=	40,
+       Weight	=	4,
+       SplatNumber	=	3,
+       PushBackMod	=	0.6,
+       SubCategory	=	Firearm,
+       ConditionMax	=	10,
+       ShareDamage	=	FALSE,
+       MaxHitCount	=	2,
+       IsAimedFirearm	=	TRUE,
+       DoorDamage	=	20,
+       UseEndurance	=	FALSE,
+       SwingAnim	=	Rifle,
+       DisplayName	=	Model 70 Featherweight,
+       MinRange	=	1.1,
+       SwingTime	=	0.5,
+       MultipleHitConditionAffected	=	FALSE,
+	   BringToBearSound = MSR788BringToBear,,
+       SwingSound	=	MSR788Shoot,
+       HitSound = BulletHitBody,
+	   ClickSound = MSR788Jam,
+       SoundRadius	=	150,
+       MinDamage	=	1.4,
+       MaxDamage	=	2.6,
+       SplatSize	=	3,
+       KnockdownMod	=	4,
+       SplatBloodOnNoDeath	=	TRUE,
+       Icon	=	RifleHunting,
+       RunAnim	=	Run_Weapon2,
+       IdleAnim	=	Idle_Weapon2,
+       CriticalChance = 40,
+       CritDmgMultiplier = 10,
+       AimingPerkCritModifier = 12,
+       HitChance = 27,
+       AimingPerkHitChanceModifier = 17,
+       AimingPerkMinAngleModifier = 0.01,
+       AimingPerkRangeModifier = 2,
+       RecoilDelay = 90,
+       PiercingBullets = TRUE,
+       SoundGain = 2,
+       ReloadTime = 25,
+       AimingTime = 30,
+       RequiresEquippedBothHands = TRUE,
+       BreakSound  =   MSR700Break,
+       MetalValue = 45,
+       TwoHandWeapon = TRUE,
+       AmmoBox = 308Box,
+       MaxAmmo = 5,
+		EquipSound = MSR788Equip,
+		UnequipSound = MSR788UnEquip,
+       InsertAmmoSound = MSR700InsertAmmo,
+       EjectAmmoSound = MSR700EjectAmmo,
+		InsertAmmoStartSound = MSR700InsertAmmoStart,
+		InsertAmmoStopSound = MSR700InsertAmmoStop,
+		EjectAmmoStartSound = MSR700EjectAmmoStart,
+		EjectAmmoStopSound = MSR700EjectAmmoStop,
+        ShellFallSound = MSR700CartridgeFall,
+       RackSound = MSR788Rack,
+       AmmoType = Base.308Bullets,
+       WeaponReloadType = boltactionnomag,
+       RackAfterShoot = TRUE,
+       JamGunChance = 4,
+       AttachmentType = Rifle,
+       StopPower = 35,
+    }
+	model Win70FW
+	{
+		mesh = weapons/firearm/win70fw,
+		texture = weapons/firearm/win70fw,
+
+		attachment muzzle
+		{
+			offset = 0.0010 -0.5210 0.0430,
+			rotate = 0.0000 0.0000 2.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}
