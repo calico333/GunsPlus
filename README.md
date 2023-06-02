@@ -34,6 +34,18 @@ Currently Includes:
   - Ruger Standard .22LR
   
   - Ruger Redhawk .41 Magnum
+
+  - Ruger 77
+
+  - Ruger 77/22
+
+  - Colt 733 "Commando"
+  
+  - Remington Model 341
+
+  - M1 Thompson SMG
+
+  - M1 Carbine
   
   Ammo Types
   
