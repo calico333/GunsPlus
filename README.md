@@ -35,7 +35,7 @@ Currently Includes:
   
   - Ruger Redhawk .41 Magnum
 
-  - Ruger 77
+  - Ruger 77 (Replacing MSR700/Base.VarmintRifle)
 
   - Ruger 77/22
 
@@ -56,3 +56,5 @@ Currently Includes:
   - .30-06 Springfield
   
   - .22LR
+
+  - .30 Carbine
