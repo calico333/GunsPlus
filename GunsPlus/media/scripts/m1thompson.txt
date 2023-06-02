@@ -1,0 +1,148 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item M1ThompsonClip
+    {
+        DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.45ACP M1A1 Thompson Clip,
+        Icon	=	BerettaClip,
+        MaxAmmo = 30,
+        AmmoType = Base.Bullets45,
+        StaticModel = GunMagazine,
+        GunType = gunp.M1Thompson,
+        WorldStaticModel = Gun_Magazine_Ground,
+    }
+	item M1Thompson
+    {
+        DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	12,
+        WeaponSprite = M1Thompson,
+        SoundVolume	=	70,
+        MinAngle	=	0.96,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	2.25,
+        SplatNumber	=	3,
+        PushBackMod	=	0.75,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	1,
+        PiercingBullets = FALSE,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	15,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Rifle,
+        DisplayName	=	M1A1 Thompson,
+        MinRange	=	0.4,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M16BringToBear,
+        SwingSound	=	M16Shoot,
+        HitSound = BulletHitBody,
+		ClickSound = M16Jam,
+        SoundRadius	=	80,
+        MinDamage	=	0.9,
+        MaxDamage	=	1.6,
+        SplatSize	=	3,
+        KnockdownMod	=	4,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	AssaultRifle2,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        CriticalChance = 40,
+        AimingPerkCritModifier = 0,
+        HitChance = 75,
+        AimingPerkHitChanceModifier = 3,
+        AimingPerkMinAngleModifier = 0.01,
+        AimingPerkRangeModifier = 4,
+        RecoilDelay = 0,
+        SoundGain = 1.5,
+        ReloadTime = 25,
+        AimingTime = 20,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound = M16Break,
+        TwoHandWeapon = TRUE,
+        MetalValue = 45,
+        AmmoBox = Bullets45Box,
+        MaxAmmo = 30,
+		EquipSound = M16Equip,
+		UnequipSound = M16UnEquip,
+        InsertAmmoSound = M16InsertAmmo,
+        EjectAmmoSound = M16EjectAmmo,
+		InsertAmmoStartSound = M16InsertAmmoStart,
+		InsertAmmoStopSound = M16InsertAmmoStop,
+		EjectAmmoStartSound = M16EjectAmmoStart,
+		EjectAmmoStopSound = M16EjectAmmoStop,
+        ShellFallSound = M16CartridgeFall,
+        RackSound = M16Rack,
+        MagazineType = Base.M1ThompsonClip,
+        AmmoType = Base.Bullets45,
+        WeaponReloadType = boltaction,
+        JamGunChance = 3,
+        AttachmentType = Rifle,
+        FireMode = Auto,
+        FireModePossibilities = Auto/Single,
+        StopPower = 6,
+    }
+	model M1Thompson
+	{
+		mesh = weapons/firearm/m1thompson,
+		texture = weapons/firearm/m1thompson,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.2390 0.1140,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

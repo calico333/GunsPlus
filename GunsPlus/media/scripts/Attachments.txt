@@ -1,0 +1,24 @@
+module Base
+{
+    imports 
+    {
+        Base
+    }
+
+    item x8Scope
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x8 Hunting Scope,
+        Icon = Scope8x,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MaxRangeModifier = 30,
+        MinRangeModifier = 10,
+        MountOn = gunp.Win70; gunp.BarRifle,
+        PartType = Scope,
+        Tooltip = Tooltip_Scope,
+        MetalValue = 22,
+        WorldStaticModel = Rifle_8XScope_Ground,
+    }
+}
