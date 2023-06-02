@@ -1,0 +1,121 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item Stevens320Short
+        {
+            DisplayCategory = Weapon,
+            ImpactSound	=	null,
+            MaxRange	=	6.5,
+            RangeFalloff	=	TRUE,
+            WeaponSprite	=	Stevens320Short,
+            SoundVolume	=	250,
+            MinAngle	=	0.657,
+            Type	=	Weapon,
+            MinimumSwingTime	=	2,
+            ToHitModifier	=	2.5,
+            NPCSoundBoost	=	1.5,
+            KnockBackOnNoDeath	=	TRUE,
+            Ranged	=	TRUE,
+            SwingAmountBeforeImpact	=	0,
+            ProjectileCount	=	6,
+            ConditionLowerChanceOneIn	=	50,
+            Weight	=	3,
+            SplatNumber	=	5,
+            PushBackMod	=	0.9,
+            MaxDamage	=	2.2,
+            SubCategory	=	Firearm,
+            ConditionMax	=	10,
+            ShareDamage	=	FALSE,
+            MaxHitCount	=	6,
+            IsAimedFirearm	=	TRUE,
+            DoorDamage	=	50,
+            IdleAnim	=	Idle_Weapon2,
+            UseEndurance	=	FALSE,
+            SwingAnim	=	Rifle,
+            DisplayName	=	Stevens 320 Pistol Grip,
+            MinRange	=	0.41,
+            SwingTime	=	2,
+            AngleFalloff	=	TRUE,
+            MultipleHitConditionAffected	=	FALSE,
+            BringToBearSound = SawnOffJS2000ShotgunBringToBear,
+            SwingSound	=	SawnOffJS2000ShotgunShoot,
+            HitSound = BulletHitBody,
+            ClickSound = SawnOffJS2000ShotgunJam,
+            SoundRadius	=	100,
+            MinDamage	=	1.5,
+            KnockdownMod	=	8,
+            SplatBloodOnNoDeath	=	TRUE,
+            Icon	=	Shotgun,
+            RunAnim	=	Run_Weapon2,
+            CriticalChance	=	60,
+            CritDmgMultiplier = 2,
+            AimingPerkCritModifier = 4,
+            HitChance = 100,
+            AimingPerkHitChanceModifier = 0,
+            RecoilDelay = 50,
+            SoundGain = 2,
+            ClipSize = 6,
+            ReloadTime = 25,
+            AimingTime = 20,
+            RequiresEquippedBothHands = TRUE,
+            BreakSound  =   SawnOffJS2000ShotgunBreak,
+            ShellFallSound = SawnOffJS2000ShotgunCartridgeFall,
+            MetalValue = 35,
+            TwoHandWeapon = TRUE,
+            AmmoBox = ShotgunShellsBox,
+            MaxAmmo = 6,
+            EquipSound = SawnOffJS2000ShotgunEquip,
+            UnequipSound = SawnOffJS2000ShotgunUnEquip,
+            InsertAmmoSound = SawnOffJS2000ShotgunInsertAmmo,
+            RackSound = SawnOffJS2000ShotgunRack,
+            AmmoType = Base.ShotgunShells,
+            WeaponReloadType = shotgun,
+            RackAfterShoot = TRUE,
+            JamGunChance = 1.8,
+            AttachmentType = Rifle,
+            StopPower = 20,
+        }
+	model Stevens320Short
+	{
+		mesh = weapons/firearm/stevens320short,
+		texture = weapons/firearm/stevens320short,
+
+		attachment muzzle
+		{
+			offset = 0.4280 0.0350 0.0000,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+}
