@@ -1,0 +1,161 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item Bullets357
+    {
+        DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	.357 Magnum Rounds,
+        Icon	=	Bullets357,
+        MetalValue = 1,
+        WorldStaticModel = 9mmRounds,
+    }
+	item Bullets357Box
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Box of .357 Magnum Bullets,
+        DisplayCategory = Ammo,
+        Icon	=	Bullets357Box,
+        MetalValue = 50,
+        WorldStaticModel = HandGunAmmoBox,
+    }
+	recipe Open Box of .357 Magnum Bullets
+    {
+        Bullets357Box,
+
+        Result:Bullets357=4,
+        Sound:PutItemInBag,
+        Time:5.0,
+    }
+	item SW282
+    {
+        DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	11,
+        WeaponSprite	=	SW282,
+        SoundVolume	=	85,
+        MinAngle	=	0.94,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	60,
+        Weight	=	2,
+        SplatNumber	=	3,
+        PushBackMod	=	0.5,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	1,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	5,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Handgun,
+        DisplayName	=	S&W Model 28-2,
+        MinRange	=	0.61,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+        SoundRadius	=	85,
+        MinDamage	=	1.15,
+        MaxDamage	=	1.85,
+        SplatSize	=	3,
+        KnockdownMod	=	2,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	RevolverLong,
+        RunAnim	=	Run_Weapon2,
+        CriticalChance	=	20,
+        CritDmgMultiplier = 4,
+        AimingPerkCritModifier = 10,
+        AimingPerkRangeModifier = 1.5,
+        HitChance = 22,
+        AimingPerkHitChanceModifier = 12,
+        AimingPerkMinAngleModifier = 0.05,
+        RecoilDelay = 35,
+        SoundGain = 1.7,
+        ClipSize = 6,
+        ReloadTime = 30,
+        AimingTime = 45,
+        BreakSound = MagnumBreak,
+        MetalValue = 30,
+        AmmoBox = Bullets357Box,
+        MaxAmmo = 6,
+		BringToBearSound = MagnumBringToBear,
+        SwingSound = MagnumShoot,
+        HitSound = BulletHitBody,
+		ClickSound = MagnumJam,
+		EquipSound = MagnumEquip,
+		UnequipSound = MagnumUnEquip,
+        InsertAmmoSound = MagnumInsertAmmo,
+        EjectAmmoSound = MagnumEjectAmmo,
+		InsertAmmoStartSound = MagnumInsertAmmoStart,
+		InsertAmmoStopSound = MagnumInsertAmmoStop,
+		EjectAmmoStartSound = MagnumEjectAmmoStart,
+		EjectAmmoStopSound = MagnumEjectAmmoStop,
+        ShellFallSound = MagnumCartridgeFall,
+        AmmoType = Base.Bullets357,
+        WeaponReloadType = revolver,
+        JamGunChance = 0,
+        haveChamber = FALSE,
+        ManuallyRemoveSpentRounds = TRUE,
+        AttachmentType = Holster,
+        ModelWeaponPart = IronSight IronSight scope scope,
+        ModelWeaponPart = RedDot RedDot reddot reddot,
+        StopPower = 14,
+    }
+	model SW282
+	{
+		mesh = weapons/firearm/sw282,
+		texture = weapons/firearm/sw282,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0470 -0.1680,
+			rotate = 180.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

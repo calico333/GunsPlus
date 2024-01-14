@@ -1,0 +1,133 @@
+module Base
+{
+	imports {
+        Base
+    }
+	item Marlin100
+    {
+       DisplayCategory = Weapon,
+       ImpactSound	=	null,
+       MaxRange	=	11.25,
+       WeaponSprite	=	Marlin100,
+       SoundVolume	=	50,
+       MinAngle	=	0.86,
+       Type	=	Weapon,
+       MinimumSwingTime	=	0.5,
+       ToHitModifier	=	1.5,
+       NPCSoundBoost	=	1.5,
+       KnockBackOnNoDeath	=	TRUE,
+       Ranged	=	TRUE,
+       SwingAmountBeforeImpact	=	0,
+       ProjectileCount	=	1,
+       ConditionLowerChanceOneIn	=	60,
+       Weight	=	2.5,
+       SplatNumber	=	3,
+       PushBackMod	=	0.1,
+       SubCategory	=	Firearm,
+       ConditionMax	=	4,
+       ShareDamage	=	FALSE,
+       MaxHitCount	=	1,
+       IsAimedFirearm	=	TRUE,
+       DoorDamage	=	20,
+       UseEndurance	=	FALSE,
+       SwingAnim	=	Rifle,
+       DisplayName	= Marlin 100,
+       MinRange	=	0.61,
+       SwingTime	=	0.5,
+       MultipleHitConditionAffected	=	FALSE,
+	   BringToBearSound = MSR700BringToBear,
+       SwingSound	=	MSR700Shoot,
+       HitSound = BulletHitBody,
+	   ClickSound = MSR700Jam,
+       SoundRadius	=	40,
+       MinDamage	=	0.2,
+       MaxDamage	=	1.1,
+       SplatSize	=	3,
+       KnockdownMod	=	2,
+       SplatBloodOnNoDeath	=	TRUE,
+       Icon	=	LeverActionRifle,
+       RunAnim	=	Run_Weapon2,
+       IdleAnim	=	Idle_Weapon2,
+       CriticalChance = 15,
+       CritDmgMultiplier = 4,
+       AimingPerkCritModifier = 7,
+       HitChance = 31,
+       AimingPerkHitChanceModifier = 17,
+       AimingPerkMinAngleModifier = 0.01,
+       AimingPerkRangeModifier = 2,
+       RecoilDelay = 50,
+       PiercingBullets = FALSE,
+       SoundGain = 2,
+       ReloadTime = 15,
+       AimingTime = 25,
+       RequiresEquippedBothHands = TRUE,
+       BreakSound  =   MSR700Break,
+       MetalValue = 45,
+       TwoHandWeapon = TRUE,
+       AmmoBox = Bullets22LRBox,
+       MaxAmmo = 1,
+	   EquipSound = MSR700Equip,
+	   UnequipSound = MSR700UnEquip,
+       InsertAmmoSound = MSR700InsertAmmo,
+       EjectAmmoSound = MSR700EjectAmmo,
+	   InsertAmmoStartSound = MSR700InsertAmmoStart,
+	   InsertAmmoStopSound = MSR700InsertAmmoStop,
+	   EjectAmmoStartSound = MSR700EjectAmmoStart,
+       EjectAmmoStopSound = MSR700EjectAmmoStop,
+       ShellFallSound = MSR700CartridgeFall,
+       RackSound = MSR700Rack,
+       AmmoType = Base.Bullets22LR,
+       WeaponReloadType = boltactionnomag,
+       RackAfterShoot = TRUE,      
+       JamGunChance = 5,
+       AttachmentType = Rifle,
+       StopPower = 1,
+    }
+	model Marlin100
+	{
+		mesh = weapons/firearm/marlin100,
+		texture = weapons/firearm/marlin100,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.0260 0.3660,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment recoilpad
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

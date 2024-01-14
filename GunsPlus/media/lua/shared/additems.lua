@@ -118,6 +118,29 @@ local function giveItems()
     inv:AddItem("Base.Ruger7722Clip")
     inv:AddItem("Base.Ruger7722Clip")
     inv:AddItem("Base.Remington341")
+
+    inv:AddItem("gunp.Mini30")
+    inv:AddItem("gunp.Bullets76239Box")
+    inv:AddItem("gunp.Bullets76239Box")
+    inv:AddItem("gunp.Bullets76239Box")
+    inv:AddItem("gunp.Mini30Clip")
+    inv:AddItem("gunp.Mini30Clip")
+    inv:AddItem("gunp.Mini30Clip")
+    inv:AddItem("gunp.Mini30Clip")
+
+    inv:AddItem("gunp.SW282")
+    inv:AddItem("gunp.Bullets357Box")
+    inv:AddItem("gunp.Bullets357Box")
+    inv:AddItem("gunp.Bullets357Box")
+    inv:AddItem("gunp.Bullets357Box")
+
+    inv:AddItem("gunp.Marlin100")
+
+    inv:AddItem("gunp.PPK")
+    inv:AddItem("gunp.PPKClip")
+    inv:AddItem("gunp.PPKClip")
+    inv:AddItem("gunp.PPKClip")
+    inv:AddItem("gunp.PPKClip")
 end
 
 Events.OnGameStart.Add(giveItems)
