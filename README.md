@@ -46,6 +46,12 @@ Currently Includes:
   - M1 Thompson SMG
 
   - M1 Carbine
+
+  - Marlin 100
+
+  - S&W 28-2 Revolver
+
+  - Walther PPK
   
   Ammo Types
   
@@ -58,3 +64,5 @@ Currently Includes:
   - .22LR
 
   - .30 Carbine
+
+  - .357 Magnum
